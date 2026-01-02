@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Us | Baba Falooda</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #fff;
+      color: #222;
+    }
+
+    /* Navbar */
+    .navbar {
+      background-color: #000;
+      color: #FFA500;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 30px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .navbar .logo {
+      font-size: 24px;
+      font-weight: 600;
+    }
+
+    .navbar nav a {
+      color: #FFA500;
+      text-decoration: none;
+      margin-left: 20px;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    .navbar nav a:hover {
+      color: #fff;
+    }
+
+
+    header {
+      background-color: #000;
+      color: #FFA500;
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 42px;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 18px;
+      margin: 0;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 50px 20px;
+    }
+
+    .about {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      align-items: center;
+    }
+
+    .about img {
+      flex: 1 1 400px;
+      max-width: 100%;
+      border-radius: 15px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    }
+
+    .about-text {
+      flex: 1 1 500px;
+    }
+
+    .about-text h2 {
+      color: #FFA500;
+      font-size: 32px;
+      margin-bottom: 20px;
+    }
+
+    .about-text p {
+      font-size: 17px;
+      line-height: 1.8;
+      color: #333;
+    }
+
+    .highlights {
+      margin-top: 50px;
+    }
+
+    .highlights h3 {
+      font-size: 28px;
+      color: #000;
+      margin-bottom: 20px;
+    }
+
+    .highlights ul {
+      list-style: none;
+      padding-left: 0;
+      font-size: 17px;
+      color: #444;
+    }
+
+    .highlights li {
+      margin-bottom: 10px;
+      position: relative;
+      padding-left: 25px;
+    }
+
+    .highlights li::before {
+      content: "✔";
+      color: #FFA500;
+      position: absolute;
+      left: 0;
+    }
+
+    .branches {
+      background-color: #000;
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+      margin-top: 60px;
+    }
+
+    .branches h3 {
+      font-size: 24px;
+      color: #FFA500;
+      margin-bottom: 20px;
+    }
+
+    .branches span {
+      display: inline-block;
+      margin: 5px 10px;
+      background: #FFA500;
+      color: #000;
+      padding: 8px 15px;
+      border-radius: 20px;
+      font-weight: 500;
+    }
+
+    footer {
+      background-color: #111;
+      color: #ccc;
+      padding: 20px;
+      text-align: center;
+      font-size: 14px;
+    }
+
+    a {
+      color: #FFA500;
+      text-decoration: none;
+    }
+
+    @media (max-width: 768px) {
+      .about {
+        flex-direction: column;
+      }
+
+      .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .navbar nav {
+        margin-top: 10px;
+      }
+
+      .navbar nav a {
+        margin-left: 0;
+        margin-right: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <div class="navbar">
+    <div class="logo">Baba Falooda</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="menu.html">Menu</a>
+      <a href="contact.html">Contact</a>
+     
+    </nav>
+  </div>
+
+  <!-- Header -->
+  <header>
+    <h1>About Baba Falooda</h1>
+    <p>Bringing You Iconic Indian Desserts Since 1986</p>
+  </header>
+
+  <!-- About Section -->
+  <section class="container">
+    <div class="about">
+      <img src="https://content.jdmagicbox.com/v2/comp/mumbai/j4/022pxx22.xx22.210903101915.z5j4/catalogue/baba-falooda-jogeshwari-west-mumbai-desserts-o4gybbpwmp-250.jpg" alt="Baba Falooda Drinks" />
+      <div class="about-text">
+        <h2>Our Story</h2>
+        <p>
+          Born in the heart of Mumbai, <strong>Baba Falooda</strong> has been serving smiles since 1986. 
+          From a single outlet to a beloved name with branches across Mumbai and even London, 
+          we’re famous for our flavorful faloodas, rich kulfis, and overloaded milkshakes.
+        </p>
+        <p>
+          Whether it's a family outing, late-night craving, or weekend treat – Baba Falooda 
+          brings you a taste of nostalgia, crafted with love and tradition.
+        </p>
+      </div>
+    </div>
+
+    <div class="highlights">
+      <h3>Why You'll Love Us</h3>
+      <ul>
+        <li>35+ years of legacy and quality</li>
+        <li>Delicious fusion of tradition & creativity</li>
+        <li>Instagram-worthy presentation</li>
+        <li>Massive menu – kulfis, rabri, falooda & more</li>
+        <li>Outlets in Mumbai & abroad</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Branches Section -->
+  <section class="branches">
+    <h3>📍 Our Locations</h3>
+    <span>Mahim</span>
+    <span>Kurla</span>
+    <span>Jogeshwari</span>
+    <span>Thane</span>
+    <span>Mira Road</span>
+    <span>Crawford Market</span>
+    <span>London</span>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+  <p>© 2025 Baba Falooda | Crafted with ❤️ by Sadiya Shaikh </p>
+  <p style="font-size: 12px;">This is a personal project for educational purposes only. All content and images belong to Baba Falooda. Not affiliated with the brand.</p>
+</footer>
+
+
+</body>
+</html>

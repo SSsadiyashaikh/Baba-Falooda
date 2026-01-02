@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu | Baba Falooda</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #fff;
+            color: #222;
+        }
+
+        .navbar {
+            background-color: #000;
+            color: #FFA500;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 30px;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .navbar .logo {
+            font-size: 24px;
+            font-weight: 600;
+        }
+
+        .navbar nav a {
+            color: #FFA500;
+            text-decoration: none;
+            margin-left: 20px;
+            font-weight: 500;
+            transition: 0.3s;
+        }
+
+        .navbar nav a:hover {
+            color: #fff;
+        }
+
+
+
+        header {
+            background-color: #000;
+            color: #FFA500;
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 42px;
+            margin-bottom: 10px;
+        }
+
+        .menu-section {
+            max-width: 1300px;
+            margin: auto;
+            padding: 40px 20px;
+        }
+
+        .menu-section h2 {
+            color: #FFA500;
+            font-size: 28px;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #FFA500;
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+
+        .items {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin-top: 20px;
+        }
+
+        .item-card {
+            width: 270px;
+            border-radius: 12px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            background-color: #fff;
+            transition: transform 0.3s ease;
+        }
+
+        .item-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .item-card img {
+            width: 100%;
+            height: 220px;
+            object-fit: fill;
+        }
+
+        .item-info {
+            padding: 15px;
+            text-align: center;
+        }
+
+        .item-info h3 {
+            margin-bottom: 10px;
+            font-size: 18px;
+            color: #333;
+        }
+
+        .item-info p {
+            font-weight: 600;
+            color: #FFA500;
+            font-size: 16px;
+        }
+
+        footer {
+            background-color: #111;
+            color: #ccc;
+            padding: 20px;
+            text-align: center;
+            font-size: 14px;
+            margin-top: 40px;
+        }
+
+        a {
+            color: #FFA500;
+            text-decoration: none;
+        }
+
+        .item-info button {
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: #FFA500;
+            color: #000;
+            border: none;
+            border-radius: 6px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .item-info button:hover {
+            background-color: #e69500;
+            color: #fff;
+        }
+
+
+        @media (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .navbar nav {
+                margin-top: 10px;
+            }
+
+            .navbar nav a {
+                margin-left: 0;
+                margin-right: 15px;
+            }
+
+            .items {
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <div class="navbar">
+        <div class="logo">Baba Falooda</div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="menu.html">Menu</a>
+            <a href="contact.html">Contact</a>
+
+        </nav>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <h1>Our Menu</h1>
+        <p>Freshly Crafted Delights Just for You</p>
+    </header>
+
+    <!-- Menu Sections -->
+    <section class="menu-section">
+        <h2>Falooda</h2>
+        <div class="items">
+            <div class="item-card">
+                <img src="https://babafalooda.com/images/falooda/BABA%20DOUBLE%20SPECIAL.png" alt="Royal Falooda">
+                <div class="item-info">
+                    <h3>Royal Falooda</h3>
+                    <p>₹170</p>
+                    <button>Order Now</button>
+
+                </div>
+            </div>
+            <div class="item-card">
+                <img src="https://babafalooda.com/images/falooda/Green%20Pista.png" alt="Chocolate Falooda">
+                <div class="item-info">
+                    <h3>Green Pista Falooda</h3>
+                    <p>₹180</p>
+                     <button>Order Now</button>
+
+
+                </div>
+            </div>
+            <div class="item-card">
+                <img src="https://babafalooda.com/images/falooda/CHOCOLATE.png" alt="Chocolate Falooda">
+                <div class="item-info">
+                    <h3>Chocolate Falooda</h3>
+                    <p>₹180</p>
+                    <button>Order Now</button>
+                    
+                
+
+                </div>
+            </div>
+            <div class="item-card">
+                <img src="	https://babafalooda.com/images/falooda/KAJU%20FALOODA.png" alt="Chocolate Falooda">
+                <div class="item-info">
+                    <h3> KAJU FALOODA </h3>
+                    <p>₹120</p>
+                    <button>Order Now</button>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="menu-section">
+        <h2>Kulfi</h2>
+        <div class="items">
+            <div class="item-card">
+                <img src="https://babafalooda.com/images/kulfi/KESAR%20PISTA%20KULFI.png" alt="Malai Kulfi">
+                <div class="item-info">
+                    <h3>Kesar Pista Kulfi</h3>
+                    <p>₹100</p>
+                    <button>Order Now</button>
+                </div>
+            </div>
+            <div class="item-card">
+                <img src="https://babafalooda.com/images/kulfi/MALAI%20KESAR%20GREEN%20PISTA%20MIX%20KULFI.png"
+                    alt="Pista Kulfi">
+                <div class="item-info">
+                    <h3>MALAI KESAR GREEN PISTA MIX KULFI</h3>
+                    <p>₹100</p>
+                    <button>Order Now</button>
+                </div>
+            </div>
+            <div class="item-card">
+                <img src="https://babafalooda.com/images/kulfi/MALAI%20KULFI.png" alt="Pista Kulfi">
+                <div class="item-info">
+                    <h3>MALAI KULFI</h3>
+                    <p>₹90</p>
+                    <button>Order Now</button>
+                </div>
+            </div>
+            <div class="item-card">
+                <img src="https://babafalooda.com/images/kulfi/GREEN%20PISTA%20KULFI.png" alt="Pista Kulfi">
+                <div class="item-info">
+                    <h3>GREEN PISTA KULFI</h3>
+                    <p>₹100</p>
+                    <button>Order Now</button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="menu-section">
+        <h2>Milkshakes</h2>
+        <div class="items">
+            <div class="item-card">
+                <img src="https://babafalooda.com/images/milk/CHOCOLATE%20MILK%20SHAKE.png" alt="Chocolate Shake">
+                <div class="item-info">
+                    <h3>Chocolate Milk Shake</h3>
+                    <p>₹250</p>
+                    <button>Order Now</button>
+                </div>
+            </div>
+            <div class="item-card">
+                <img src="https://babafalooda.com/images/milk/Kesar%20Pista%20Milk%20Shake.png" alt="Kesar Pista Shake">
+                <div class="item-info">
+                    <h3>Kesar Pista Milk Shake</h3>
+                    <p>₹250</p>
+                    <button>Order Now</button>
+                </div>
+            </div>
+            <div class="item-card">
+                <img src="https://babafalooda.com/images/milk/GREEN%20PISTA%20MILK%20SHAKE.png" alt="Kesar Pista Shake">
+                <div class="item-info">
+                    <h3>Green pista milk shake</h3>
+                    <p>₹250</p>
+                    <button>Order Now</button>
+                </div>
+            </div>
+            <div class="item-card">
+                <img src="https://babafalooda.com/images/milk/MANGO%20MILK%20SHAKE.png" alt="Kesar Pista Shake">
+                <div class="item-info">
+                    <h3>Mango Milk Shake </h3>
+                    <p>₹250</p>
+                    <button>Order Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 Baba Falooda | Crafted with ❤️ by Sadiya Shaikh</p>
+        <p style="font-size: 12px;">This is a personal project for educational purposes only. All content and images
+            belong to Baba Falooda. Not affiliated with the brand.</p>
+    </footer>
+
+</body>
+
+</html>

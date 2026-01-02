@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home | Baba Falooda</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background-color: #fff;
+      color: #222;
+    }
+
+    .navbar {
+      background-color: #000;
+      color: #FFA500;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 30px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .navbar .logo {
+      font-size: 42px;
+      font-weight: 600;
+    }
+
+    .navbar nav a {
+      color: #FFA500;
+      text-decoration: none;
+      margin-left: 20px;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    .navbar nav a:hover {
+      color: #fff;
+    }
+
+  
+
+
+    header {
+      background-color: #000;
+      color: #FFA500;
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 42px;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 18px;
+      margin: 0;
+    }
+
+    .hero {
+      max-width: 1100px;
+      margin: 40px auto;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .hero h2 {
+      font-size: 36px;
+      color: #FFA500;
+    }
+
+    .hero p {
+      font-size: 18px;
+      margin-top: 10px;
+      color: #444;
+    }
+
+    .slider {
+      position: relative;
+      width: 90%;
+      max-width: 900px;
+      height: 400px;
+      margin: 30px auto;
+      overflow: hidden;
+      border-radius: 10px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    .slider img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      opacity: 0;
+      animation: fadeSlide 30s infinite;
+    }
+
+    .slider img:nth-child(1) { animation-delay: 0s; }
+    .slider img:nth-child(2) { animation-delay: 4s; }
+    .slider img:nth-child(3) { animation-delay: 8s; }
+
+    @keyframes fadeSlide {
+      0%, 100% { opacity: 0; }
+      10%, 30% { opacity: 1; }
+      40%, 90% { opacity: 0; }
+    }
+
+    footer {
+      background-color: #111;
+      color: #ccc;
+      padding: 20px;
+      text-align: center;
+      font-size: 14px;
+    }
+
+    a {
+      color: #FFA500;
+      text-decoration: none;
+    }
+
+    @media (max-width: 768px) {
+      .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .navbar nav {
+        margin-top: 10px;
+      }
+
+      .navbar nav a {
+        margin-left: 0;
+        margin-right: 15px;
+      }
+
+      .slider {
+        height: 250px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <div class="navbar">
+    <div class="logo"><img src="assets/images/Logo.png" alt="" width="42px">Baba Falooda</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="menu.html">Menu</a>
+      <a href="contact.html">Contact</a>
+   
+    </nav>
+  </div>
+
+  <!-- Header -->
+  <header>
+    <h1>Welcome to Baba Falooda</h1>
+    <p>India's Favorite Dessert Destination Since 1986</p>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h2>Coolest Falooda in Town</h2>
+    <p>Enjoy the perfect blend of tradition and taste with our signature faloodas, kulfis & shakes!</p>
+  </section>
+
+  <!-- Image Slider -->
+  <div class="slider">
+    <img src="assets/images/Yellow and Black Collage Best Friends Slam Book Fun Presentation.jpg" alt="Falooda 1" />
+    <img src="assets/images/Light Blue Watercolor Painted Choose Fun Desktop Wallpaper.png" alt="Falooda 2" />
+    <img src="assets/images/Green Modern Zoom Virtual Background.png" alt="Falooda 3" />
+  </div>
+
+  <!-- Footer -->
+  <footer>
+  <p>© 2025 Baba Falooda | Crafted with ❤️ by Sadiya Shaikh</p>
+  <p style="font-size: 12px;">This is a personal project for educational purposes only. All content and images belong to Baba Falooda. Not affiliated with the brand.</p>
+</footer>
+
+</body>
+</html>
+
